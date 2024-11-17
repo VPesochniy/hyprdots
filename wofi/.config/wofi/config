@@ -1,8 +1,10 @@
 width=400
 height=520
 location=center
+
 prompt=
 show=drun
+
 columns=1
 filter_rate=100
 allow_markup=true
