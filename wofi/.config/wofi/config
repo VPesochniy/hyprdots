@@ -20,6 +20,7 @@ image_size=32
 gtk_dark=true
 layer=top
 term=kitty
+
 hide_scroll=true
 normal_window=true
 line_wrap=word_char
