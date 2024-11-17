@@ -1,0 +1,142 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 36,
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "clock#time"
+  ],
+  "modules-right": [
+    "tray",
+    "group/network_and_bluetooth",
+    "pulseaudio",
+    "clock#date",
+    "hyprland/language",
+    "group/backlight_and_battery",
+    "custom/weather"
+  ],
+  "group/backlight_and_battery": {
+    "orientation": "horizontal",
+    "modules": [
+      "backlight",
+      "battery"
+    ]
+  },
+  "group/network_and_bluetooth": {
+    "orientation": "horizontal",
+    "modules": [
+      "network",
+      "bluetooth"
+    ]
+  },
+  "clock#time": {
+    "interval": 1,
+    "tooltip": false,
+    "format": "<span> </span>{:%I:%M:%S %p}"
+  },
+  "tray": {
+    "icon-size": 20,
+    "spacing": 10
+  },
+  "network": {
+    "on-click": "~/.config/waybar/scripts/toggle_wifi.sh",
+    "on-click-right": "nm-connection-editor",
+    "format-wifi": "{icon} {signalStrength}%",
+    "tooltip-format-wifi": "Connected to {essid}\nIP: {ipaddr}",
+    "format": "󰤨 off",
+    "tooltip-format": "Off",
+    "format-disconnected": "󰤨 on",
+    "tooltip-format-disconnected": "Not connected",
+    "format-icons": [
+      "󰤯",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ]
+  },
+  "bluetooth": {
+    "on-click": "~/.config/waybar/scripts/toggle_bluetooth.sh",
+    "on-click-right": "blueberry",
+    "format-on": "  on",
+    "tooltip-format-on": "Not connected",
+    "format-off": "  off",
+    "tooltip-format-off": "Off",
+    "format-disabled": "  off",
+    "tooltip-format-disabled": "Off-blocked",
+    "format-connected": "  {device_battery_percentage}%",
+    "tooltip-format-connected": "{device_alias}"
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}% {format_source}",
+    "format-muted": " off {format_source}",
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-click-right": "pavucontrol",
+    "on-scroll-up": "",
+    "on-scroll-down": "",
+    "format-source": "  {volume}%",
+    "format-source-muted": "  off",
+    "format-icons": {
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    }
+  },
+  "clock#date": {
+    "format": "<span> </span>{:%d.%m}",
+    "tooltip-format": "<big>{calendar}</big>"
+  },
+  "hyprland/language": {
+    "format": "{shortDescription} {short}"
+  },
+  "backlight": {
+    "format": "{icon} {percent}%",
+    "on-scroll-up": "",
+    "on-scroll-down": "",
+    "tooltip": false,
+    "format-icons": [
+      "󰃞",
+      "󰃟",
+      "󰃠"
+    ]
+  },
+  "battery": {
+    "interval": 1,
+    "states": {
+      "warning": 20,
+      "critical": 10
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰂄 {capacity}%",
+    "format-icons": [
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ]
+  },
+  "custom/weather": {
+    "format": "{}°",
+    "interval": 3600,
+    "exec": "wttrbar --location Saint-Petersburg --hide-conditions --ampm --date-format '%A' --lang en",
+    "return-type": "json"
+  },
+  "custom/vpn": {
+    "format": "VPN ",
+    "exec": "echo '{\"class\": \"connected\"}'",
+    "exec-if": "test -d /proc/sys/net/ipv4/conf/tun0",
+    "return-type": "json",
+    "interval": 5
+}
+}
