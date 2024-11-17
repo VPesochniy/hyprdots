@@ -17,12 +17,12 @@ window {
   font-size: 16px;
   font-weight: 800;
   background-color: none;
-  /* background: ; */
   outline: none;
   border-radius: 4px;
   margin: 10px 13px;
   margin-bottom: 2px;
 }
+
 #input:focus {
   border: 0px solid transparent;
   margin-bottom: 0px;
@@ -34,7 +34,6 @@ window {
   color: #ebdbb2;
   font-weight: normal;
   background-color: transparent;
-  /* background-color: red; */
   border-radius: 4px;
 }
 

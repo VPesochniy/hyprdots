@@ -131,12 +131,5 @@
     "interval": 3600,
     "exec": "wttrbar --location Saint-Petersburg --hide-conditions --ampm --date-format '%A' --lang en",
     "return-type": "json"
-  },
-  "custom/vpn": {
-    "format": "VPN ",
-    "exec": "echo '{\"class\": \"connected\"}'",
-    "exec-if": "test -d /proc/sys/net/ipv4/conf/tun0",
-    "return-type": "json",
-    "interval": 5
-}
+  }
 }
