@@ -2,6 +2,7 @@
   "layer": "top",
   "position": "top",
   "height": 36,
+  "gtk-layer-shell": true,
   "modules-left": [
     "hyprland/workspaces"
   ],
