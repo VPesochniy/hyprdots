@@ -1,16 +1,12 @@
 
-
 # https://starship.rs/guide/
 starship init fish | source
-
 
 # https://www.mankier.com/1/zoxide
 zoxide init fish | source
 
-
 # https://docs.atuin.sh/
 atuin init fish | source
-
 
 # https://junegunn.github.io/fzf/
 fzf --fish | source
