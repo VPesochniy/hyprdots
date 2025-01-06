@@ -4,7 +4,8 @@
   "height": 36,
   "gtk-layer-shell": true,
   "modules-left": [
-    "hyprland/workspaces"
+    "hyprland/workspaces",
+    "hyprland/window"
   ],
   "modules-center": [
     "clock#time"
@@ -42,8 +43,8 @@
     "spacing": 10
   },
   "network": {
-    "on-click": "~/.config/waybar/scripts/toggle_wifi.sh",
-    "on-click-right": "nm-connection-editor",
+    "on-click": "nm-connection-editor",
+    "on-click-right": "~/.config/waybar/scripts/toggle_wifi.sh",
     "format-wifi": "{icon} {signalStrength}%",
     "tooltip-format-wifi": "Connected to {essid}\nIP: {ipaddr}",
     "format": "󰤨 off",
@@ -59,8 +60,8 @@
     ]
   },
   "bluetooth": {
-    "on-click": "~/.config/waybar/scripts/toggle_bluetooth.sh",
-    "on-click-right": "blueberry",
+    "on-click": "blueberry",
+    "on-click-right": "~/.config/waybar/scripts/toggle_bluetooth.sh",
     "format-on": "  on",
     "tooltip-format-on": "Not connected",
     "format-off": "  off",
@@ -73,8 +74,8 @@
   "pulseaudio": {
     "format": "{icon} {volume}% {format_source}",
     "format-muted": " off {format_source}",
-    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
-    "on-click-right": "pavucontrol",
+    "on-click": "pavucontrol",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
     "on-scroll-up": "",
     "on-scroll-down": "",
     "format-source": "  {volume}%",

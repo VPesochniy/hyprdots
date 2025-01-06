@@ -13,125 +13,126 @@ fzf --fish | source
 
 # https://fishshell.com/docs/current/cmds/abbr.html
 # https://uutils.github.io/coreutils/docs/index.html
-abbr arch uu-arch
-abbr b2sum uu-b2sum
-abbr b3sum uu-b3sum
-abbr base32 uu-base32
-abbr base64 uu-base64
-abbr basename uu-basename
-abbr basenc uu-basenc
-abbr cat uu-cat
-abbr chgrp uu-chgrp
-abbr chmod uu-chmod
-abbr chown uu-chown
-abbr chroot uu-chroot
-abbr cksum uu-cksum
-abbr comm uu-comm
-abbr cp uu-cp
-abbr csplit uu-csplit
-abbr cut uu-cut
-abbr date uu-date
-abbr dd uu-dd
-abbr df uu-df
-abbr dir uu-dir
-abbr dircolors uu-dircolors
-abbr dirname uu-dirname
-abbr du uu-du
-abbr echo uu-echo
-abbr env uu-env
-abbr expand uu-expand
-abbr expr uu-expr
-abbr factor uu-factor
-abbr false uu-false
-abbr fmt uu-fmt
-abbr fold uu-fold
-abbr groups uu-groups
-abbr hashsum uu-hashsum
-abbr head uu-head
-abbr hostid uu-hostid
-abbr hostname uu-hostname
-abbr id uu-id
-abbr install uu-install
-abbr join uu-join
-abbr kill uu-kill
-abbr link uu-link
-abbr ln uu-ln
-abbr logname uu-logname
-abbr ls uu-ls
-abbr md5sum uu-md5sum
-abbr mkdir uu-mkdir
-abbr mkfifo uu-mkfifo
-abbr mknod uu-mknod
-abbr mktemp uu-mktemp
-abbr more uu-more
-abbr mv uu-mv
-abbr nice uu-nice
-abbr nl uu-nl
-abbr nohup uu-nohup
-abbr nproc uu-nproc
-abbr numfmt uu-numfmt
-abbr od uu-od
-abbr paste uu-paste
-abbr pathchk uu-pathchk
-abbr pinky uu-pinky
-abbr pr uu-pr
-abbr printenv uu-printenv
-abbr printf uu-printf
-abbr ptx uu-ptx
-abbr pwd uu-pwd
-abbr readlink uu-readlink
-abbr realpath uu-realpath
-abbr rm uu-rm
-abbr rmdir uu-rmdir
-abbr seq uu-seq
-abbr sha1sum uu-sha1sum
-abbr sha224sum uu-sha224sum
-abbr sha256sum uu-sha256sum
-abbr sha3-224sum uu-sha3-224sum
-abbr sha3-256sum uu-sha3-256sum
-abbr sha3-384sum uu-sha3-384sum
-abbr sha3-512sum uu-sha3-512sum
-abbr sha384sum uu-sha384sum
-abbr sha3sum uu-sha3sum
-abbr sha512sum uu-sha512sum
-abbr shake128sum uu-shake128sum
-abbr shake256sum uu-shake256sum
-abbr shred uu-shred
-abbr shuf uu-shuf
-abbr sleep uu-sleep
-abbr sort uu-sort
-abbr split uu-split
-abbr stat uu-stat
-abbr stdbuf uu-stdbuf
-abbr sum uu-sum
-abbr sync uu-sync
-abbr tac uu-tac
-abbr tail uu-tail
-abbr tee uu-tee
+alias arch="uu-arch"
+alias b2sum="uu-b2sum"
+alias b3sum="uu-b3sum"
+alias base32="uu-base32"
+alias base64="uu-base64"
+alias basename="uu-basename"
+alias basenc="uu-basenc"
+alias cat="uu-cat"
+alias chgrp="uu-chgrp"
+alias chmod="uu-chmod"
+alias chown="uu-chown"
+alias chroot="uu-chroot"
+alias cksum="uu-cksum"
+alias comm="uu-comm"
+alias cp="uu-cp"
+alias csplit="uu-csplit"
+alias cut="uu-cut"
+alias date="uu-date"
+alias dd="uu-dd"
+alias df="uu-df"
+alias dir="uu-dir"
+alias dircolors="uu-dircolors"
+alias dirname="uu-dirname"
+alias du="uu-du"
+alias echo="uu-echo"
+alias env="uu-env"
+alias expand="uu-expand"
+alias expr="uu-expr"
+alias factor="uu-factor"
+alias false="uu-false"
+alias fmt="uu-fmt"
+alias fold="uu-fold"
+alias groups="uu-groups"
+alias hashsum="uu-hashsum"
+alias head="uu-head"
+alias hostid="uu-hostid"
+alias hostname="uu-hostname"
+alias id="uu-id"
+alias install="uu-install"
+alias join="uu-join"
+alias kill="uu-kill"
+alias link="uu-link"
+alias ln="uu-ln"
+alias logname="uu-logname"
+alias ls="uu-ls"
+alias md5sum="uu-md5sum"
+alias mkdir="uu-mkdir"
+alias mkfifo="uu-mkfifo"
+alias mknod="uu-mknod"
+alias mktemp="uu-mktemp"
+alias more="uu-more"
+alias mv="uu-mv"
+alias nice="uu-nice"
+alias nl="uu-nl"
+alias nohup="uu-nohup"
+alias nproc="uu-nproc"
+alias numfmt="uu-numfmt"
+alias od="uu-od"
+alias paste="uu-paste"
+alias pathchk="uu-pathchk"
+alias pinky="uu-pinky"
+alias pr="uu-pr"
+alias printenv="uu-printenv"
+alias printf="uu-printf"
+alias ptx="uu-ptx"
+alias pwd="uu-pwd"
+alias readlink="uu-readlink"
+alias realpath="uu-realpath"
+alias rm="uu-rm"
+alias rmdir="uu-rmdir"
+alias seq="uu-seq"
+alias sha1sum="uu-sha1sum"
+alias sha224sum="uu-sha224sum"
+alias sha256sum="uu-sha256sum"
+alias sha3="-224sum uusha3-224sum"
+alias sha3="-256sum uusha3-256sum"
+alias sha3="-384sum uusha3-384sum"
+alias sha3="-512sum uusha3-512sum"
+alias sha384sum="uu-sha384sum"
+alias sha3sum="uu-sha3sum"
+alias sha512sum="uu-sha512sum"
+alias shake128sum="uu-shake128sum"
+alias shake256sum="uu-shake256sum"
+alias shred="uu-shred"
+alias shuf="uu-shuf"
+alias sleep="uu-sleep"
+alias sort="uu-sort"
+alias split="uu-split"
+alias stat="uu-stat"
+alias stdbuf="uu-stdbuf"
+alias sum="uu-sum"
+alias sync="uu-sync"
+alias tac="uu-tac"
+alias tail="uu-tail"
+alias tee="uu-tee"
+# alias test="uu-test"
 abbr test uu-test
-abbr timeout uu-timeout
-abbr touch uu-touch
-abbr tr uu-tr
-abbr true uu-true
-abbr truncate uu-truncate
-abbr tsort uu-tsort
-abbr tty uu-tty
-abbr uname uu-uname
-abbr unexpand uu-unexpand
-abbr uniq uu-uniq
-abbr unlink uu-unlink
-abbr uptime uu-uptime
-abbr users uu-users
-abbr vdir uu-vdir
-abbr wc uu-wc
-abbr who uu-who
-abbr whoami uu-whoami
-abbr yes uu-yes
+alias timeout="uu-timeout"
+alias touch="uu-touch"
+alias tr="uu-tr"
+alias true="uu-true"
+alias truncate="uu-truncate"
+alias tsort="uu-tsort"
+alias tty="uu-tty"
+alias uname="uu-uname"
+alias unexpand="uu-unexpand"
+alias uniq="uu-uniq"
+alias unlink="uu-unlink"
+alias uptime="uu-uptime"
+alias users="uu-users"
+alias vdir="uu-vdir"
+alias wc="uu-wc"
+alias who="uu-who"
+alias whoami="uu-whoami"
+alias yes="uu-yes"
 
-abbr cd __zoxide_z
-abbr ls eza
-abbr ll eza -l
-abbr la eza -la
+alias cd="__zoxide_z"
+alias ls="eza"
+alias ll="eza -l"
+alias la="eza -la"
 
 # https://fishshell.com/docs/current/cmds/bind.html
 # Control_L + F
